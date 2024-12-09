@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://i.imgur.com/HcXq7ZT.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .calculator {
+    width: 400px;
+    background: rgba(25, 25, 25, 0.9); /* Dark background with slight transparency */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Modern blur effect */
+  }
+  
+  .display {
+    height: 100px;
+    background: #1e1e1e;
+    color: #00ffcc; /* Neon green for better visibility */
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    height: 70px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #2c2c2c; /* Dark button background */
+    color: #ffffff; /* White text for contrast */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #444444; /* Slightly lighter on hover */
+  }
+  
+  .operator {
+    background: #ff5722; /* Bright orange for operators */
+    color: white;
+  }
+  
+  .operator:hover {
+    background: #e64a19;
+  }
+  
+  .equal {
+    grid-column: span 4;
+    background: #4caf50; /* Green for the equal button */
+    color: white;
+  }
+  
+  .equal:hover {
+    background: #45a049;
+  }
+  
